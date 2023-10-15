@@ -12,3 +12,13 @@ function greetMulti(...names: string[]): void {
 }
 
 greetMulti('Mary', 'jane', 'samsons', 'Betwa');
+
+type Job = {
+    tasks: string[];
+    start: Function;
+};
+
+const noJob: Job = {
+    tasks: [],
+    start: () => {},
+};
